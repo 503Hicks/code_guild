@@ -1,0 +1,4 @@
+animal = input('give three animals you like')
+animal_list = animal.split(', ')
+
+print(f'one animal i like is the {animal[0]} and the {animal[1]} is cooler than {animal[2]}.'
