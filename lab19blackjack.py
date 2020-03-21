@@ -12,7 +12,7 @@ card_dict = {'A':1, 2:2, 3:3, 4:4, 5:5, 6:6,7:7,8:8,9:9,10:10,'J':10,'Q':10,'K':
 card1 = input('What is your first card? ').upper
 card2 = input('What is your second card? ').upper
 card3 = input('What is your third card? ').upper
-user_sum = card_dict
+user_sum = card_dict[card_dict] + card_dict
 
 if user_sum <17:
     print('Hit')
