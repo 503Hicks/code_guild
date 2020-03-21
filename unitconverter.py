@@ -50,11 +50,7 @@
 # 100 ft is 0.0189394 mi
 
 
-# user_feet = int(input('Enter distance(ft.): '))
 
-# meters = user_distance * 0.3048
-
-# print(f' {user_feet}ft equals {meters}m')
 meters = {
 'in': 0.0254,
 'ft': 0.3048,
@@ -85,7 +81,7 @@ if start_units == 'ft':
     feet_dist = ft/end_units
     # mi_dist = ft/1609.34
     # km_dist = ft/1000
-    print(feet_dist)
+    print(f' {distance}{start_units} converts to {feet_dist}')
     # print(mi_dist)
     # print(km_dist)
 elif start_units == 'mi':

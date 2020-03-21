@@ -27,8 +27,10 @@
 print("Welcome to class! ")
 
 while True:
+    #TO GET USERS GRADE NUMBER
     grade = int(input("Please enter your Grade: "))
-
+    
+    #TO GET USERS QUALIFIER
     def qualifier():
 
         if grade % 10 >= 7:
@@ -38,15 +40,9 @@ while True:
         else:
             qualifier = "-"
         return qualifier
-    
-# while True:
-
-# grade = input("please enter student's  score: ")
-# grade = int(grade)
-
+    #TO GET USERS LETTER GRADE
     if grade >= 90 and grade <=100: 
         print("A"+ qualifier())
-
     elif grade >= 80 and grade <=89: 
         print("B"+ qualifier())
     elif grade >= 70 and grade <=79:
@@ -57,9 +53,8 @@ while True:
         print("You got an F!")
     else:
         print("you cheater!")
-
-    if(input('\nWould you like to make another (y/n): ').lower() != 'y'):
+# LOOP TO ENTER ANOTHER GRADE
+    if(input('\nWould you like to enter another grade? (y/n): ').lower() != 'y'):
         
         print('I don\'t blame you. Fuck them kids')
         break
-    

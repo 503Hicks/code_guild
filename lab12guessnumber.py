@@ -36,25 +36,51 @@
 
 # Swap the user with the computer: the user will pick a number, and the computer will make random guesses until they get it right.
 
+# import random
+# #COMPUTERS RANDOM NUMBER BETWEEN 1-10
+# number = random.randint(1, 10)
+# attempts=0
+
+# #MAX ATTEMPTS OF 10
+# while (attempts < 10):
+#     #USERS # OF ATTEMPTS 
+#     attempts = attempts+1
+#     #USERS GUESS
+#     current_guess = int(input('Guess a number: '))
+
+#     #RESPONSE TO USERS GUESS
+#     if current_guess == number:
+#         print(f'You guessed correct in {attempts} tries!')
+#         break
+#     elif current_guess < number:
+#         print('You guessed to low... try again.')
+#     else:
+#         print('you guessed too high... try again.')
+       
+
+
+
+
 import random
-#COMPUTERS RANDOM NUMBER BETWEEN 1-10
+#Computers random number 1-10
 number = random.randint(1, 10)
+
 attempts=0
+last_guess = 0
 
-#MAX ATTEMPTS OF 10
 while (attempts < 10):
-    #USERS # OF ATTEMPTS 
     attempts = attempts+1
-    #USERS GUESS
-    current_guess = int(input('Guess a number: '))
 
-    #RESPONSE TO USERS GUESS
+    current_guess = int(input('Guess a number: '))
+    
+
     if current_guess == number:
         print(f'You guessed correct in {attempts} tries!')
         break
-    elif current_guess < number:
-        print('You guessed to low... try again.')
-    else:
-        print('you guessed too high... try again.')
-       
-
+    elif current_guess != number:
+        print('Try again.')
+        if abs(number - current_guess) < abs(number - last_guess):
+            print("You're getting warmer")
+        else:
+            print("You're getting colder.")
+    last_guess = current_guess

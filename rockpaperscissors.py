@@ -31,8 +31,8 @@ while True:
     elif user_choice == 'scissors' and comp_choice == 'paper':
         print('Scissors cuts paper... YOU WIN!!!')
 
-    play_again = input('Would you like to play again?').lower()
-    if play_again != 'yes':
+    play_again = input('Would you like to play again? (y/n): ').lower()
+    if play_again != 'y':
         print("later loser!")
         break
 
