@@ -13,6 +13,7 @@ def check_palindrome():
       print(f'{palindrome_input} is NOT a palindrome. ')
 check_palindrome()
 
+
 def check_anagram():
     anagram_input1 = input('Enter a word or phrase to check if anagram: ').lower()
     anagram_input2 = input('Enter a word or phrase to check if anagram: ').lower()
