@@ -8,11 +8,14 @@
 # Over 21, advise "Already Busted"
 # Print out the current total point value and the advice.
 
-card_dict = {'A':1, 2:2, 3:3, 4:4, 5:5, 6:6,7:7,8:8,9:9,10:10,'J':10,'Q':10,'K':10}
-card1 = input('What is your first card? ').upper
-card2 = input('What is your second card? ').upper
-card3 = input('What is your third card? ').upper
-user_sum = card_dict[card_dict] + card_dict
+card_dict = {'A':1, 'a':1, '2':2, '3':3, '4':4, '5':5, '6':6,'7':7,'8':8,'9':9,'10':10,'J':10, 'j':10,'Q':10,'q':10, 'K':10, 'k':10}
+card1 = input('What is your first card? ')
+card2 = input('What is your second card? ')
+card3 = input('What is your third card? ')
+user_sum = card_dict[card1] + card_dict[card2] + card_dict[card3]
+
+print(f'{card_dict[card1]} + {card_dict[card2]} + {card_dict[card3]} = {user_sum}')
+
 
 if user_sum <17:
     print('Hit')
