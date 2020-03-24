@@ -8,22 +8,22 @@ import string
 
 data = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 5, 6, 7, 8, 9, 8, 7, 6, 7, 8, 9]
 
-
-# # TO FIND PEAKS
-# for i in range(len(data)):
-#     # if (i-1) in data and (i+1) in data:
-#     #     print(i)
-#     if data[i] >= data[i-1] and data[i] >= data[i+1]:
-#             data.append(i)
-#             print(data[i])
-# print(data[i])
-
+#TO FIND PEAKS
+def peaks():
+    for i in range(len(data[1:])):
+        if data[i] >= data[i-1] and data[i] >= data[i+1]:
+                data.append(i)
+                print(data[i])
 #TO FIND VALLEYS
-for i in range(len(data)):
-    if data[i] <= data[i-1] and data[i] <= data[i+1]:
-        data.append(i)
-        print(data[i])
-# print(data[i])
+def valleys():
+    for i in range(len(data)):
+        if data[i] <= data[i-1] and data[i] <= data[i+1]:
+            data.append(i)
+            print(data[i])
+            
+# peaks()
+valleys()
+
 
 
 
