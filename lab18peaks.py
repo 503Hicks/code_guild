@@ -17,7 +17,7 @@ def get_peaks():
         if (i-1) in index_list and (i+1) in index_list:
             if data[i] >= data[i-1] and data[i] >= data[i+1]:
                 peaks.append(i)
-    print(peaks)
+    return peaks
 
 #TO FIND VALLEYS
 def get_valleys():
@@ -28,11 +28,17 @@ def get_valleys():
         if (i-1) in index_list and (i+1) in index_list:
             if data[i] <= data[i-1] and data[i] <= data[i+1]:
                 valleys.append(i)
-    print(valleys)
+    return valleys
+
+#TO FIND PEAKS AND VALLEYS
+def get_peaks_and_valleys(p, v):
+    # print(p)
+    # print(v)
+    peaks_and_valleys = p + v
+    print(peaks_and_valleys)
 
 
+           
+get_peaks_and_valleys(get_peaks(), get_valleys())
 
-            
-get_peaks()
-get_valleys()
 
