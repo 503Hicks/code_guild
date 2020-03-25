@@ -9,45 +9,30 @@ import string
 data = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 5, 6, 7, 8, 9, 8, 7, 6, 7, 8, 9]
 
 #TO FIND PEAKS
-def peaks():
-    for i in range(len(data[1:])):
-        if data[i] >= data[i-1] and data[i] >= data[i+1]:
-                data.append(i)
-                print(data[i])
+def get_peaks():
+    peaks = []
+    index_list = list(range(len(data)))
+
+    for i in index_list:
+        if (i-1) in index_list and (i+1) in index_list:
+            if data[i] >= data[i-1] and data[i] >= data[i+1]:
+                peaks.append(i)
+    print(peaks)
+
 #TO FIND VALLEYS
-def valleys():
-    for i in range(len(data)):
-        if data[i] <= data[i-1] and data[i] <= data[i+1]:
-            data.append(i)
-            print(data[i])
+def get_valleys():
+    valleys = []
+    index_list = list(range(len(data)))
+
+    for i in index_list:
+        if (i-1) in index_list and (i+1) in index_list:
+            if data[i] <= data[i-1] and data[i] <= data[i+1]:
+                valleys.append(i)
+    print(valleys)
+
+
+
             
-# peaks()
-valleys()
-
-
-
-
-# for i in range(len(data)):
-#         # print(data[i])
-#         if data[-i] >= data[i-1] and data[i] <= data[i+1]:
-#             print(data[i])
-
-# print(data)
-
-
-
-
-
-# def peaks():
-
-#     for i in range(len(data)):
-#         if data[i] >= data[i-1] and data[i] <= data[i+1]:
-#             print(data)
-
-# def valleys():
-    
-#     for i range(len(data)):
-#         if data[i] < data[i] and data[i] 
-
-# def peaks_and_valleys():
+get_peaks()
+get_valleys()
 
