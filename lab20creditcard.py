@@ -25,7 +25,6 @@ cc_list = list(input('enter cc number: '))
 
 for i in range(0, len(cc_list)): 
     cc_list[i] = int(cc_list[i]) 
-
 print(cc_list)
 # Slice off the last digit. That is the check digit.
 cc_list = cc_list[:-1]
@@ -33,12 +32,18 @@ print(cc_list)
 # Reverse the digits.
 cc_list.reverse()
 print(cc_list)
-
 # Double every other element in the reversed list.
 for i in range(0,len(cc_list),2):
     cc_list[i] *=2
-
 print(cc_list)
+# Subtract nine from numbers over nine.
+sub9 = []
+for i in cc_list:
+    if i > 9:
+        sub9.append(i-9)
+    else:
+        sub9.append(i)
+print(sub9)
 
 
 
