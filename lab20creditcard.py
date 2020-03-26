@@ -22,14 +22,31 @@
 
 # Convert the input string into a list of ints
 cc_list = list(input('enter cc number: '))
-# Slice off the last digit. That is the check digit.
-cc_list = cc_list[:-1]
 
-
-# >>> list('hello')
-# ['h', 'e', 'l', 'l', 'o']
-# Even without converting th
-
+for i in range(0, len(cc_list)): 
+    cc_list[i] = int(cc_list[i]) 
 
 print(cc_list)
+# Slice off the last digit. That is the check digit.
+cc_list = cc_list[:-1]
+print(cc_list)
+# Reverse the digits.
+cc_list.reverse()
+print(cc_list)
+
+# Double every other element in the reversed list.
+for i in range(0,len(cc_list),2):
+    cc_list[i] *=2
+
+print(cc_list)
+
+
+
+# 4556737586899855
+
+
+
+
+
+
 
