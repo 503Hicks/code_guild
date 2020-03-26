@@ -44,8 +44,9 @@ for i in cc_list:
     else:
         sub9.append(i)
 print(sub9)
-
-
+# Sum all values.
+sum_sub9 = sum(sub9)
+print(sum_sub9)
 
 # 4556737586899855
 
