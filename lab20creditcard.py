@@ -27,6 +27,7 @@ for i in range(0, len(cc_list)):
     cc_list[i] = int(cc_list[i]) 
 print(cc_list)
 # Slice off the last digit. That is the check digit.
+digit_check = cc_list[15]
 cc_list = cc_list[:-1]
 print(cc_list)
 # Reverse the digits.
@@ -47,10 +48,27 @@ print(sub9)
 # Sum all values.
 sum_sub9 = sum(sub9)
 print(sum_sub9)
+# Take the second digit of that sum.
+second_dig = sum_sub9%10
+print(second_dig)
+# If that matches the check digit, the whole card number is valid.
+if second_dig == digit_check:
+    print('Valid!')
+else:
+    print('Invalid number!')
+
+
 
 # 4556737586899855
 
-
+# 4 5 5 6 7 3 7 5 8 6 8 9 9 8 5 5
+# 4 5 5 6 7 3 7 5 8 6 8 9 9 8 5
+# 5 8 9 9 8 6 8 5 7 3 7 6 5 5 4
+# 10 8 18 9 16 6 16 5 14 3 14 6 10 5 8
+# 1 8 9 9 7 6 7 5 5 3 5 6 1 5 8
+# 85
+# 5
+# Valid!
 
 
 
