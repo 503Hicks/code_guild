@@ -5,23 +5,22 @@
 
 
 
-class ATM:
-    def __init__(self, check_balance, deposit, check_withdrawal, calc_interest): #this argument will take on self.
-        self.check_balance = check_balance
-        self.deposit = deposit
+class ATM():
+    def __init__(self, balance=0, print_transactions=[]):
+        self.balance = balance
+        self.print_transactions = print_transactions
 
-    
-    def check_balance(): # returns the account ballance
-        pass
+        
+    def check_balance(self): # returns the account ballance
+        return f' your balance is {self.balance}'
 
-    def deposit(amount): # deposits the givin amount in the account
-        self.amount = amount
-    
-    def check_withdrawal(amount): # returns true if the withdraw amount wont put the account in the negative
-        self.amount = amount
+    def deposit(self, amount):
+        return self.balance + amount
+   
+    # deposit(amount) deposits the given amount in the accoun
 
-    def withdraw(amount): # withdraws the amount from the account and returns it
-        pass
+my_atm = ATM()
 
-    def calc_interest(): # returns the amount of interest calculated on the account.
-        pass
+print(my_atm.check_balance())
+print(my_atm.deposit(4582))
+print(my_atm.check_balance())
