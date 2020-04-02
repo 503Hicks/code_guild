@@ -7,10 +7,25 @@
 # #print(add(5, 2))
 # #print(add(8, 1))
 
+import string
 
 # Problem 1
 
 # Get a string from the user, print out another string, doubling every letter.
+
+def double_letter():
+    # user_string = input('Enter a string: ')
+    # ''.join([x*2 for x in user_string])
+    # print(user_string)
+    strs = "abcd"
+    "".join([x*2 for x in strs])
+    print(strs)
+
+double_letter()
+
+
+
+
 
 
 # string = input('enter something: ')
@@ -24,18 +39,3 @@
 # print(check)
 # print(some)
 
-
-user_input = int(input("enter a num between 1-99: "))
-
-def words(user_input):
-    units = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"]
-    teens = ["Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"]
-    tens = ["Twenty","Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"]
-
- 
-    if n <=9:
-        print(units[n])
-    elif n >= 10 and n <= 19:
-        return teens[n-10]
-    elif n >= 20 and n <= 99:
-        return tens[(n//10)-2] + " " + (units[n % 10] if n % 10 !=0 else "")
