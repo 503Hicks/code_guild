@@ -49,34 +49,93 @@
 # >>> board.is_game_over()
 # False
 
+# The Player class has the following properties:
+# name = player name
+# token = 'X' or 'O'
+class Player:
+    def __init__(self, name, token):
+        self.name = name
+        self.token = token
 
-# class Player:
-#     def __init__(self, name, token):
-#         self.name = name
-#         self.token = token
+# The Game class has the following properties:
 
+# board = your representation of the board
+class Game:
+    def __init__(self,):
+        self.board =  [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
-# class Game:
-#     def __init__(self, board):
-#         self.board = board
+    # __repr__() Returns a pretty string representation of the game board
+    def __repr__(self):
+        print('')
+        print(self.board[0], self.board[1], self.board[2])
+        print(self.board[3], self.board[4], self.board[5])
+        print(self.board[6], self.board[7], self.board[8])
+        print('')
 
-
-#     def board():
-#         pass
-
-#     def __repr__():
-#         pass
-
-#     def move(x,y,player):
-#         pass
-
-#     def calc_winner():
-#         pass
-
-#     def is_full()
-
+       
 
 
+    # move(x, y, player) Place a player's token character string at a given coordinate (top-left is 0, 0), x is horizontal position, y is vertical position.
+    def move(self,i,player):
+        # dict = {
+        #     1: 1,
+        #     2: [0, 1],
+        # }    
+        # dict[1]
+        # self.board[4]
+        # self.board[4] = player1.token
+        # player_1 = Player('bob', 'X')
+        pass
+
+    # calc_winner() What token character string has won or None if no one has.
+    def calc_winner(self):
+        self.win_conditions = ((0,1,2),(3,4,5),(6,7,8),(0,4,8),(2,4,6),(0, 3, 6), (1, 4, 7), (2, 5, 8))
+
+
+    # is_full() Returns true if the game board is full.
+    def is_full(self):
+        if int in self.board:
+            return True
+        
+
+
+    # is_game_over() Returns true if the game board is full or a player has won.
+    def is_game_over(self):
+        # if self.is_full == True:
+        #     return True
+        # elif self.calc_winner
+        
+
+
+# player1 = Player('Toby', 'X')
+# player2 = Player('Jon', 'O')
+namecheck = Game()
+
+namecheck.__repr__()
+
+
+# if player1.token = 
+
+
+def main():
+
+
+    while True:
+    
+        move()
+        if is_full():
+            print("board is full tie-game")
+            break
+
+
+# player1 = Player('Toby', 'X')
+# player2 = Player('Jon', 'O')
+
+
+
+
+
+# main()
 
 
 
@@ -89,10 +148,10 @@
 # player1 = Player()
 
 
-game = [[0,  0,  0],
-        [0,  0,  0],
-        [0,  0,  0]]
-for row in game:
-    print(row)
+# game = [[1,  2,  3],
+#         [4,  5,  6],
+#         [7,  8,  9]]
+# for row in game:
+#     print(row)
 
    
