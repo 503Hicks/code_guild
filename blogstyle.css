@@ -1,0 +1,19 @@
+.container-fluid {
+    text-align: center;
+    color: orangered;
+    background-color:  #FFFFFF; 
+    
+    
+}
+body {
+    background-color: #00674B;
+}
+
+hr {
+    border-top: 5px dotted red;
+}
+
+div {
+    background-color: #FFFFFF;
+    border-color: coral;
+}
