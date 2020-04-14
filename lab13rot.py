@@ -34,3 +34,4 @@ for i in input:
         y.append(i)
 y = "".join(y)
 print(str(y))
+

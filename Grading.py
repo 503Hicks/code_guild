@@ -48,7 +48,7 @@ while True:
     elif grade >= 70 and grade <=79:
         print("C"+ qualifier())
     elif grade >= 60 and grade <= 69:
-        print("D"+ qualifier)
+        print("D"+ qualifier())
     elif grade >= 0 and grade <= 59:
         print("You got an F!")
     else:

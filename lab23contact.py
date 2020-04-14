@@ -1,14 +1,40 @@
-# f = open('filename.txt')  # open the file
-# contents = f.read()  # read the contents
-# print(contents)
-# f.close()  # close the file
+
 import csv 
 
 
 with open('contacts.csv', 'r') as file:
     lines = file.read().split('\n')
-    print(lines)
+    header = lines.pop(0).split(', ')
+    contacts = []
+    for line in lines:
+        data = line.split(', ')
+        item = {}
+        for i in range(len(data)):
+            item.update({header[i]: data [i]})
+        contacts.append(item)
+print(contacts)
 
-# contacts= [{'name':'matthew', 'favorite fruit': 'blackberries', 'favorite color':'orange',},
-# {'name':'deaudre', 'favorite fruit': 'bananas', 'favorite color': 'green'}
+#     # print(lines)
+#     print(header)
+#     print(data)
 
+
+
+
+
+
+
+
+# def read_contacts():
+#     with open('contacts.csv', 'r') as file:
+#         lines = file.read().split('\n')
+#     header = lines.pop(0).split(', ')
+#     contacts = []
+#     for line in lines:
+#         data = line.split(', ')
+#         item = {}
+#         for i in range(len(data)):
+#             item.update({header[i]: data[i]})
+#         contacts.append(item)
+#     return contacts
+# print(read_contacts())

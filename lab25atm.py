@@ -7,23 +7,22 @@ class ATM():
         self.print_transactions = print_transactions
     def check_balance(self): # returns the account ballance
         return f'****Your balance is {self.balance}****'
-    def deposit(self, amount): 
+    def deposit(self, amount): #returns the deposit amount and new balance
         self.balance = self.balance + amount
         self.print_transcations = self.print_transactions.append(f'You deposited {amount}')
         return f'You deposited {amount} dollars. your new amount is {self.balance}'
     def check_withdrawal(self, amount):#returns true if the withdrawn amount won't put the account in the neg.
         if amount < self.balance:
             return True
-    def withdraw(self, amount):
+    def withdraw(self, amount): #returns the withdraw amount and new balance
         self.balance = self.balance - amount
         self.print_transcations = self.print_transactions.append(f'You withdrew {amount}')
         return f'You withdrew {amount} dollars. your new amount is {self.balance}'
-    def get_trasactions(self):
+    def get_trasactions(self): #return a list of transactions
         return self.print_transactions
 
 def main():
     my_atm1 = ATM(3000,[])
-# while loop
 
     while True:
         
@@ -47,14 +46,4 @@ def main():
 main()
 
 
-
-    # print(my_atm1.check_balance())
-    # print(my_atm1.deposit(500))
-    # print(my_atm1.deposit(1000))
-    # print(my_atm1.deposit(25))
-    # print(my_atm1.withdraw(2000))
-    # print(my_atm1.withdraw(2000))
-    # print(my_atm1.get_trasactions())
-    # print(my_atm1.check_balance())
-    
 

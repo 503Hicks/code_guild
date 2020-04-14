@@ -1,0 +1,40 @@
+h1 {
+    color: #dfdfdf;
+    background-color: rgb(171, 171, 171);
+    text-align: center;
+    padding: 50px;
+}
+
+h2 { 
+    text-align: center;
+    color: #1DA1F2;
+    
+}
+
+.jpegrounded {
+    float: right;
+    border: 3px solid #bfc6c9 ;
+    border-radius: 5%;
+}
+
+body {
+    background-color: #d0d0d0;
+    text-align: center
+}
+
+p {
+    color: tomato;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+  #quote1 {
+      color: #1DA1F2;
+      text-align: center;
+      font-family: fantasy;
+  }
+
+  li {
+      color: tomato;
+  }
+

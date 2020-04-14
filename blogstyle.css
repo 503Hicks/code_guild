@@ -1,12 +1,29 @@
-.container-fluid {
+.header {
+    padding: 30px;
+    font-size: 40px;
     text-align: center;
-    color: orangered;
-    background-color:  #FFFFFF; 
-    
+    background: peru;
     
 }
+
+.btn-primary {
+
+    background-color: rgb(95, 89, 123);
+    width: 100%;
+    border-radius: 0%;
+    padding: 0%;
+}
+
+
+.img-thumbnail {
+    float: left;
+    border-radius: 5%;
+    
+}
+
 body {
     background-color: #00674B;
+    padding: 20px;
 }
 
 hr {
@@ -14,6 +31,23 @@ hr {
 }
 
 div {
-    background-color: #FFFFFF;
+    width: 80%;
+    float: right;
+    background-color: rgb(235, 235, 235);
     border-color: coral;
+    padding: 2px;
+    
 }
+
+
+.sidenav  {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 1000;
+  left: 0;
+  background-color: (235, 235, 235);
+  overflow-x: hidden;
+  padding-top: 20px;
+    }

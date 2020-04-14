@@ -65,25 +65,73 @@
 # finally:
 #     f.close()
 
-import csv
-import matplotlib.pyplot as plt 
+# import csv
+# import matplotlib.pyplot as plt 
 
-with open('./points.py') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    line_count = 0
+# with open('./points.py') as csv_file:
+#     csv_reader = csv.reader(csv_file, delimiter=',')
+#     line_count = 0
 
-    x = []
-    y = []
+#     x = []
+#     y = []
 
-    for row in csv_reader:
-        if line_count == 0:
-            line_count += 1
-        else:
-            x.append(row[0])
-            y.append(row[1])
-            line_count +=1
+#     for row in csv_reader:
+#         if line_count == 0:
+#             line_count += 1
+#         else:
+#             x.append(row[0])
+#             y.append(row[1])
+#             line_count +=1
 
-plt.scatter(x.y)
-ply.show()
+# plt.scatter(x.y)
+# ply.show()
 
 
+
+
+# def get_data():
+#     data = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 5, 6, 7, 8, 9, 8, 7, 6, 7, 8, 9]
+#     return data
+
+# def get_peaks(data):
+#     peaks = []
+#     index_list = list(range(len(data)))
+
+#     for i in index_list:
+#         if (i-1) in index_list and (i+1) in index_list: # makes the index start at 1 so the indexing is not out of range?
+#             if data[i] >= data[i-1] and data[i] >= data[i+1]:
+#                 peaks.append(i)
+#     return peaks
+
+# def get_valleys(data):
+#     valleys = []
+#     index_list = list(range(len(data)))
+
+#     for i in index_list:
+#         if (i-1) in index_list and (i+1) in index_list: # makes the index start at 1 so the indexing is not out of range?
+#             if data[i] <= data[i-1] and data[i] <= data[i+1]:
+#                 valleys.append(i)
+#     return valleys
+
+# def peaks_and_valleys(peaks, valleys):
+#     return peaks+valleys
+
+# def main():
+#     peaks = get_peaks(get_data())
+#     valleys = get_valleys(get_data())
+#     print(peaks_and_valleys(peaks, valleys))
+# main()
+
+
+
+
+# contacts= [
+#     {'name':'matthew', 'favorite fruit': 'blackberries', 'favorite color':'orange', \n}, 
+#     {'name':'deaudre', 'favorite fruit': 'bananas', 'favorite color': 'green'},
+#     {'name' : 'adam'. 'favorite fruit': 'apple', 'favorite color: 'auburn',},
+#     {'name' : 'bob'. 'favorite fruit': 'bananas', 'favorite color: 'blue',},
+#     {'name' : 'chris'. 'favorite fruit': 'cherries', 'favorite color: 'crimson',},
+#     {'name' : 'dave'. 'favorite fruit': 'dates', 'favorite color: 'dark green',},
+#     {'name' : 'erica'. 'favorite fruit': 'apple', 'favorite color: 'purple',},
+#     {'name' : 'frank'. 'favorite fruit': 'blueberries', 'favorite color: 'green',}
+# ]

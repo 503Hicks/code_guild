@@ -28,7 +28,7 @@
 # Version 2
 
 # The ROI (return on investment) is defined as (earnings - expenses)/expenses. Calculate your ROI, print it out along with your earnings and expenses.
-100/20
+# 100/20
 
 import random
 #CREATES LIST OF 6 RANDOM NUMBERS 1-99
@@ -68,7 +68,7 @@ def payout(matches):
 def main():
     games = 0
     total_winnings = 0
-    while games < 100000:
+    while games < 1000:
         win_num = pick6()
         user_num = get_ticket()
         # print(win_num)
