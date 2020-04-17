@@ -3,19 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="lab5style.css">
+    <title>Lab5 Order Form</title>
+    
 </head>
 <body>
-    <h2>Tortilla</h2>
-    <input type="radio" name="pick_tortilla" value="Wheat">Wheat<br>
-    <input type="radio" name="pick_tortilla" value="Corn">Corn<br>
-    <input type="radio" name="pick_tortilla" value="Spinach">Spinach<br>
-
-    <h2>Rice Selection</h2>
-    <input type="radio"> White <br>
-    <input type="radio"> Brown <br>
-    <input type="radio"> Wild Rice <br>
-
+    <div>
 
     
+    <form action="https://requestb.in/u96nubu9" method="post">
+
+
+        <div>
+            <img id="logo_img" src="panchoslogo.png" alt="Panchos Logo">
+        </div>
+
+        <div>
+            <img src="spinachburrito.jpg" alt="spinach tortilla">
+            
+            <h2>Tortilla</h2>
+            <input type="radio" name="pick_tortilla" value="Wheat">Wheat
+            <input type="radio" name="pick_tortilla" value="Corn">Corn
+            <input type="radio" name="pick_tortilla" value="Spinach">Spinach            
+        </div>
+
+        <div>
+
+            <h2>Rice (Select one):</h2>
+            <input type="radio" name="pick_rice"> White <br>
+            <input type="radio" name="pick_rice"> Brown <br>
+            <input type="radio" name="pick_rice"> Wild Rice <br>
+
+        </div>
+
+        <div>
+            <h2>Beans (Select one): </h2>
+            <input type="radio" name="pick_bean"> Black beans <br>
+            <input type="radio" name="pick_bean"> Pinto Beans <br>
+            <input type="radio" name="pick_bean"> Garbanzo beans <br>
+        </div>
+        
+        <div>
+            <h2>Protein (Select one):</h2>
+            <input type="radio" name="pick_protein"> Spicy Veggie Sausage <br>
+            <input type="radio" name="pick_protein"> Faux Pork(Soy Curls) <br>
+            <input type="radio" name="pick_protein"> Chorizo (Spicy Faux Pork Sausage) <br>
+            <input type="radio" name="pick_protein"> Tofu <br>
+            <input type="radio" name="pick_protein"> Tempeh <br>
+        </div>
+        
+        <div>
+            <h2>Additional Toppings (Check all that apply):</h2>
+            <input type="checkbox"> Avocado <br>
+            <input type="checkbox"> Roasted Veggie<br>
+            <input type="checkbox"> jalapenos<br>
+            <input type="checkbox"> Salsa<br>
+        </div>
+        
+       <br>
+
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            Username:
+            <input type="text" pattern=".{6,}" placeholder="(at least 6 characters)" required/> <br>
+            Password:
+            <input type="password" pattern=".{6,}" placeholder="(at least 6 characters)" required/> <br>
+            Name:
+            <input type="text" placeholder="First and Last"/><br>
+            Email Address:
+            <input type="email" placeholder="Enter valid email"/> <br>
+            Phone Number:
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(e.g. 293-213-5555)" required required/> <br>
+            Date of Birth:
+            <input type="date"/> <br>
+            SSN:
+            <input type="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" placeholder="(e.g. 415-25-2627)" required/> <br>
+            Street:
+            <input type="text" pattern="[A-Za-z0-9'\.\-\s\,]{3,}" placeholder="e.g. 123 Mulberry Ln"> <br>
+            City, State, Zip:
+            <input type="text" placeholder="(e.g. Portland, OR, 97201)"/> <br>
+          </fieldset>
+
+
+        <input type="submit">
+
+
+
+    </form>
+
+    </div>
+ </body>
+
 </html>
